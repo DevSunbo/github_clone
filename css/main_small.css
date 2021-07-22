@@ -1,0 +1,120 @@
+header{
+    height: auto;
+}
+.inner{
+    /*width 범위 제한 초기화*/
+    max-width: none;
+    height: auto;
+    padding: 0 20px;
+}
+.btn-tg{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 15px 0;
+}
+/*header*/
+header .inner .menu-group .logo{
+    display: flex;
+}
+.menu-group, .sub-group{
+    float: none;
+    padding: 20px 0;
+}
+.menu-group{
+    display: block;
+}
+
+.menu-group .menu ul{
+    display: block;
+}
+.menu-group .menu ul li{
+    margin-top: 10px;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 0 10px;
+}
+
+.sub-group{
+    display: block;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.sub-group .btn-group, .sub-group #search{
+    display: flex;
+    flex-direction: column;
+}
+.sub-group .btn, .sub-group #search{
+    margin: 10px 0;
+}
+.sub-group .input--text{
+    /*width: 100%;*/
+}
+
+.btn-group{
+    display: block;
+    box-sizing: border-box;
+}
+
+.sub-menu ul{
+    justify-content: center;
+}
+
+/*토글하기*/
+header .toggle{
+    display: none !important;;
+}
+header .toggle.on{
+    display: block !important;
+}
+
+
+/*section--- visual*/
+.text__section, .sign-up-form{
+    float: none;
+}
+.section__visual .inner {
+    display: block;
+    text-align: center;
+}
+.section__visual .text__section{
+    padding: 0 15px;
+    font-size: 24px;
+}
+.section__visual .sign-up-form{
+    margin: 30px auto;
+    width: 500px;
+}
+
+/*section --- video*/
+.section__video .inner{
+    padding: 0;
+}
+.section__video .tiles{
+    padding: 0;
+}
+.section__video .tiles ul{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/*section--map*/
+.section__map .inner{
+    padding: 0 20px;
+}
+.section__map .inner .summary{
+    text-align: left;
+    padding: 10px 0;
+}
+
+
+/*section-- footer*/
+.section__footer .inner .logo{
+    display: none;
+}
+.footer-left, .footer-right{
+    float: none;
+    display: block;
+}
+.section__footer .inner ul{
+    justify-content: center;
+}

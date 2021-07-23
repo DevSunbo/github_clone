@@ -83,16 +83,17 @@ header{
     border: 1px solid gray;
     padding: 10px;
     border-radius: 4px;
-    background: #ffffff;
-}
+    background: #eee linear-gradient(to bottom,#fcfcfc,#eee);
 
+}
 .btn:hover{
     filter: brightness(80%);
 }
 
 .btn.btn-primary{
-    color: white;
-    background: linear-gradient(to bottom, #00ff00, #009000);
+    border: 1px solid #65b836;
+    color: #fff;
+    background: #55a532 linear-gradient(to bottom,#91dd70,#55ae2e);
 }
 #search{
     order: 1;
@@ -155,11 +156,9 @@ section{
 }
 .text__section{
     flex: 1;
+    padding: 0 20px 0 0;
 }
-.summary{
-    font-size: 30px;
 
-}
 .text__section .summary-title{
     color: white;
     font-size: 38px;
@@ -250,8 +249,7 @@ section{
     top: 0;
     left: 0;
 }
-.tiles{
-    padding: 10px;
+.section__video .tiles{
     border-top: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
 }
@@ -265,7 +263,7 @@ section{
 .tiles ul li{
     box-sizing: border-box;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 10px 20px;
     border-right: 1px solid #dcdcdc;
 }
 .tiles ul li:last-child{
@@ -293,12 +291,24 @@ section{
 }
 
 /*section-map*/
+
 #map{
     width: 100%;
     height: 400px;
 }
+.section__map .inner{
+    padding: 30px 0;
+}
 .section__map .summary{
     text-align: center;
+    padding: 0 0 30px;
+}
+.section__map .summary .summary-title{
+    font-size: 38px;
+}
+.section__map .summary .summary-title {
+    font-size: 26px;
+
 }
 /*section-bottom*/
 .section__bottom{
@@ -315,13 +325,16 @@ section{
     padding: 40px 20px;
     line-height: 140%;
 }
+.card .cell2{
+    text-align: center;
+}
 .card .cell1 a{
-    height: 100%;
+    display: block;
+    margin: auto;
 }
 /*section-footer*/
-
-.section__footer .inner{
-    padding: 20px;
+.section__footer{
+    height: 60px;
 }
 
 .section__footer ul li{
@@ -334,12 +347,17 @@ section{
     color: #51a7e8;
 }
 
+.section__footer .footer-left, .section__footer .footer-right{
+    padding: 10px 0;
+}
 .section__footer .footer-left ul{
     display: flex;
+    justify-content: center;
 }
 
 .section__footer .footer-right ul{
     display: flex;
+    justify-content: center;
 }
 .section__footer .footer-mid{
     position: absolute;
@@ -353,7 +371,7 @@ section{
     box-sizing: border-box;
 }
 .section__footer .footer-mid .logo svg:hover{
-    background-color: #51a7e8;
+    fill: #51a7e8;
 }
 
 .section__footer li a:hover{
